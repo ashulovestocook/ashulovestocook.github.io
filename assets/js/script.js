@@ -1,30 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const themeToggle = document.getElementById("theme-toggle");
-    const body = document.body;
-
-    // Check if user has a previously saved theme preference
-    const currentTheme = localStorage.getItem("theme");
-    if (currentTheme === "dark") {
-        body.classList.add("dark-mode");
-        themeToggle.textContent = "☀️";
-    }
-
-    // Toggle theme on click
-    themeToggle.addEventListener("click", () => {
-        body.classList.toggle("dark-mode");
-        
-        if (body.classList.contains("dark-mode")) {
-            localStorage.setItem("theme", "dark");
-            themeToggle.textContent = "☀️";
-        } else {
-            localStorage.setItem("theme", "light");
-            themeToggle.textContent = "🌙";
-        }
-    });
-});
-
-
-
 // --- LOADING SCREEN FADE OUT ---
 document.addEventListener("DOMContentLoaded", () => {
     const loaderWrapper = document.getElementById("loader-wrapper");
@@ -40,3 +13,4 @@ document.addEventListener("DOMContentLoaded", () => {
         
     }, 1600); 
 });
+
