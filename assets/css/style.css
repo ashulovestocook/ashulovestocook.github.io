@@ -101,13 +101,13 @@ section h2 {
 /* Platform Cards */
 .platform-summary {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1rem;
 }
 
 .card {
     background: var(--card-bg);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 12px;
     text-align: center;
     box-shadow: var(--shadow);
@@ -142,11 +142,12 @@ section h2 {
     border-bottom: none;
 }
 
+
 /* Grids */
 .grid-2-col {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .grid-3-col {
